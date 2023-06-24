@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+</head>
+
+
+
+
+<style type="text/css">
+
+
+#green-circle
+
+{
+
+background-color: green;
+  height: 200px;
+  width: 200px;
+
+border-radius: 50%; 
+
+
+
+
+
+}
+
+#red-one
+
+{
+  height: 200px;
+  width: 200px;
+
+
+
+background-color: red;
+
+
+}
+#red-two
+
+{
+
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  display: no;
+
+  
+  
+  
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+  
+  
+
+<div id="green-circle"> 
+
+
+  
+
+
+
+</div>
+
+Click The Green Circle 
+
+<br>
+
+
+<div id="red-one"></div><button type="button" id="fade-out">FADE-OUT</button>
+<br>
+<div id="red-two"></div><button type="button" id="fade-in">FADE-IN</button>
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+
+$("#green-circle").click (function(){
+
+
+
+
+
+
+$(this).animate({width:"400px",height:"400px",marginLeft:"100px",marginTop:"100px"}
+
+
+
+,2000,function(){
+ 
+
+  $(this).css("background-color", "blue");
+
+
+
+
+});
+
+
+
+
+});
+
+$("#fade-out").click(function(){
+    $("#red-one").fadeOut();
+  });
+  
+
+
+
+  $("#fade-in").click(function(){
+    $("#red-one").fadeIn();
+  });
+
+
+
+
+
+
+
+
+
+</script>
+
+
+  
+</body>
+</html>
